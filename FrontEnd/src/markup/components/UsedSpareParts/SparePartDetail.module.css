@@ -1,0 +1,224 @@
+.sparepartDetailOuter {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  padding: 40px 0;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.sparepartDetailCard {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.1);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.breadcrumbs {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+.breadcrumbs b {
+  color: #2d3fa3;
+}
+
+.sparepartMain {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.imageSection {
+  flex: 1 1 320px;
+  min-width: 320px;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #e0e7ff;
+  padding: 16px;
+  overflow: visible !important;
+}
+.imageSection img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+.imageSection img:hover {
+  transform: scale(1.04);
+}
+
+.infoSection {
+  flex: 2 1 400px;
+  min-width: 320px;
+}
+.infoHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.infoHeader h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #2d3fa3;
+}
+.favoriteIcon {
+  font-size: 28px;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.favoriteIcon:hover {
+  color: #c0392b;
+}
+
+.badges {
+  margin: 12px 0 18px 0;
+  display: flex;
+  gap: 10px;
+}
+.badgeStock {
+  background: #e0ffe0;
+  color: #27ae60;
+  padding: 3px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.badgeNew {
+  background: #e0e7ff;
+  color: #2d3fa3;
+  padding: 3px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.price {
+  font-size: 28px;
+  color: #27ae60;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.specTable {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  font-size: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.specTable td {
+  padding: 8px 12px;
+}
+.specTable td:first-child {
+  font-weight: 600;
+}
+
+.contactButton {
+  background: #2d3fa3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 32px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #e0e7ff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+.contactButton:hover {
+  background: #1a237e;
+}
+
+.reviewsSection {
+  margin: 2rem 0 0 0;
+}
+.reviewsTitle {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #2d3fa3;
+}
+.reviewsEmpty {
+  color: #888;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.relatedSection {
+  margin: 2rem 0 0 0;
+}
+.relatedTitle {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #2d3fa3;
+}
+.relatedProducts {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.relatedCard {
+  border: 1px solid #e0e7ff;
+  border-radius: 14px;
+  padding: 16px;
+  width: 200px;
+  text-align: center;
+  background: #f4f7ff;
+  box-shadow: 0 2px 8px #e0e7ff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.relatedCard:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 24px #c7d2fe;
+}
+.relatedCard img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 100px;
+  object-fit: cover;
+}
+.relatedCardName {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2d3fa3;
+}
+.relatedCardPrice {
+  color: #27ae60;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Add a zoom effect for the main product image */
+.mainProductImg {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s;
+  box-shadow: 0 2px 8px #e0e7ff;
+  cursor: zoom-in;
+  position: relative;
+  z-index: 1;
+}
+.mainProductImg:hover {
+  transform: scale(1.25);
+  box-shadow: 0 12px 48px 0 #1976d2aa, 0 2px 8px #e0e7ff;
+  z-index: 10;
+}

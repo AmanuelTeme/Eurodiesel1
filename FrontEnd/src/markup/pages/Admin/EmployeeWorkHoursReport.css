@@ -1,0 +1,89 @@
+/* Modern and responsive styles for Employee Work Hours Report */
+.work-hours-report-root {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26, 35, 126, 0.08);
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.work-hours-report-root h4,
+.work-hours-report-root .MuiTypography-h4 {
+  color: #1a237e;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+}
+
+.work-hours-report-root .MuiBox-root {
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-hours-report-root .MuiButton-root {
+  min-width: 140px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #1a237e11;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+}
+
+.work-hours-report-root .MuiButton-contained {
+  background: #1a237e;
+  color: #fff;
+}
+
+.work-hours-report-root .MuiButton-contained:hover,
+.work-hours-report-root .MuiButton-contained:focus {
+  background: #11194a;
+  color: #fff;
+}
+
+.work-hours-report-root .MuiButton-outlined {
+  border-color: #1a237e;
+  color: #1a237e;
+}
+
+.work-hours-report-root .MuiButton-outlined:hover,
+.work-hours-report-root .MuiButton-outlined:focus {
+  background: #f4f6fa;
+  border-color: #1a237e;
+  color: #1a237e;
+}
+
+.work-hours-report-root .MuiTableContainer-root {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #1a237e11;
+  margin-top: 1.5rem;
+}
+
+.work-hours-report-root .MuiTableHead-root {
+  background: #f4f6fa;
+}
+
+.work-hours-report-root .MuiTableCell-head {
+  font-weight: 700;
+  color: #1a237e;
+  font-size: 1.05rem;
+}
+
+.work-hours-report-root .MuiTableCell-body {
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .work-hours-report-root {
+    padding: 1rem 0.25rem;
+  }
+  .work-hours-report-root .MuiBox-root {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .work-hours-report-root .MuiButton-root {
+    width: 100%;
+    min-width: unset;
+  }
+}

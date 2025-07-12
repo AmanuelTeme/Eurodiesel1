@@ -1,0 +1,121 @@
+.service-block-one {
+  margin-bottom: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: white; */
+  /* border: 1px solid #dfe2ec; */
+  height: 300px;
+  position: relative;
+  gap: 10px;
+  /* Ensure consistent width */
+  width: 100%;
+  min-width: 0;
+}
+
+.inner-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: visible;
+  position: relative;
+  /* Ensure consistent height */
+  height: 100%;
+  min-height: 260px;
+}
+
+.inner-box h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  white-space: normal;
+  word-break: break-word;
+  overflow: visible;
+  /* Ensure consistent text sizing */
+  line-height: 1.2;
+  min-height: 2.4em; /* 2 lines minimum */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  margin-bottom: 0;
+}
+
+.icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  /* Ensure consistent icon positioning */
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-box h5 {
+  margin-bottom: 10px;
+  /* Ensure consistent subtitle sizing */
+  font-size: 0.9em;
+  line-height: 1.2;
+  min-height: 1.2em;
+}
+
+.inner-box .text {
+  flex-grow: 1;
+}
+
+/* Ensure Bootstrap grid columns have consistent width */
+.col-lg-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 0 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .service-block-one {
+    height: 280px;
+  }
+
+  .inner-box {
+    min-height: 240px;
+  }
+}
+
+/* Dashboard card styling */
+.dashboard-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
