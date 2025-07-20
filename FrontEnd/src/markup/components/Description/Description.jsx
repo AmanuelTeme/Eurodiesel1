@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import image8 from "../../../assets/images/misc/ethiopianwomanmechanic.jpeg";
+import image8 from "../../../assets/images/misc/itwomen.jpg";
 
 function Description() {
   const { t } = useTranslation();
